@@ -27,7 +27,10 @@
     font-size: 1.5rem;
     justify-content: flex-end;
     margin-top: 80px;
+    
 }
+
+
 
 .enlace{
     padding-right: 1%;
@@ -141,4 +144,17 @@ h3{
 .img_service{
     width: 50%;
     margin-left: 300px;
+}
+
+@media screen and (max-width: 800px){
+    .header_nav{
+        font-size: 1rem;
+        }
+    #Logo{
+         width: 50%;
+        }
+    h1{
+        font-size: 1.5rem;
+        }
+    
 }
