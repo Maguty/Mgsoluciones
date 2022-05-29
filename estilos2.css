@@ -20,10 +20,12 @@
 .Logo{
     display: flex;
     align-items: center;
+    width: 200px;
+    height: 100px;
 }
 
 .Logo img{
-    width: 50%;
+    width: 100%;
 }
 
 .header_nav{
@@ -232,7 +234,7 @@ h3{
         font-size: 1.1rem;
     }
     .Logo img{
-        width: 50%;
+        width: 100%;
     }
     h1{
         margin: 200px auto 0px;
