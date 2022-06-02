@@ -114,3 +114,23 @@ main {
     width: 2.5%;
     margin-top: 10px;
     margin-bottom: 10px; }
+
+    @media screen and (max-width: 700px){
+      #header{
+          flex-direction: column;
+      }
+      #header .Logo{
+          justify-content: center;
+      }
+      #header .header_nav{
+          justify-content: center;
+      }
+      .Contenedor{
+          grid-template-columns: 1fr;
+          
+      }
+      .Contenedor_Nosotros{
+          grid-template-columns: 1fr;
+      }
+  }
+  
