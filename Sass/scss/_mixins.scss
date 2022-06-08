@@ -1,0 +1,10 @@
+
+
+@mixin Titulos($Letras,$fuente,$Negrita,$alinea)
+{
+    color: $Letras;
+    font-family: $fuente;
+    font-weight: $Negrita;
+    text-align: $alinea;
+}
+    

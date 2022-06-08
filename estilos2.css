@@ -216,10 +216,10 @@ h3{
     .header_nav{
         justify-content: center;
     }
-    .Contenedor{
+    /*.Contenedor{
         grid-template-columns: 1fr;
         
-    }
+    }*/
     .Contenedor_Nosotros{
         grid-template-columns: 1fr;
     }
@@ -238,7 +238,7 @@ h3{
         width: 100%;
     }
     h1{
-        margin: 200px auto 0px;
+        margin: 150px auto 0px;
         font-size: 1.5rem; 
     }
     .Contenedor{

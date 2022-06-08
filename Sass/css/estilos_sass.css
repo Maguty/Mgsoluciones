@@ -1,3 +1,6 @@
+/* mapa variables del logo*/
+/* Color fondo Header foter ( fondo_hf)*/
+/*Color de Titulos y link*/
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +12,13 @@
   grid-template-areas: "header" "main" "footer";
   grid-template-rows: auto; }
 
+.nav, #header .header_nav, #Footer .footer_nav {
+  width: 100%;
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: flex-end; }
+
 #header {
   grid-area: header;
   background-color: #cfc6c6;
@@ -16,22 +26,15 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px; }
-  #header .header_nav {
-    width: 100%;
-    display: flex;
-    font-size: 1.5rem;
-    list-style: none;
-    justify-content: flex-end;
-    align-items: center; }
-    #header .header_nav :hover {
-      color: antiquewhite; }
-    #header .header_nav a {
-      text-decoration: none;
-      color: #6767db;
-      font-family: 'Roboto', sans-serif;
-      font-weight: bold; }
-    #header .header_nav .enlace {
-      padding-right: 1%; }
+  #header .header_nav :hover {
+    color: antiquewhite; }
+  #header .header_nav a {
+    text-decoration: none;
+    color: #6767db;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; }
+  #header .header_nav .enlace {
+    padding-right: 1%; }
   #header .Logo {
     display: flex;
     align-items: center;
@@ -44,8 +47,7 @@ main {
   grid-area: main; }
   main h1 {
     color: #6767db;
-    font-size: 2.2rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: bold;
     text-align: left;
     margin-left: 45px;
@@ -83,10 +85,10 @@ main {
       main .Contenedor .Contenedor_Dentro h3 {
         display: flex;
         justify-content: center;
-        align-items: center;
         color: #6767db;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold; }
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        text-align: center; }
 
 #Footer {
   background-color: #cfc6c6;
@@ -94,12 +96,8 @@ main {
   display: flex;
   flex-direction: row; }
   #Footer .footer_nav {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
     font-size: 1rem;
-    justify-content: center;
-    align-items: center; }
+    justify-content: center; }
     #Footer .footer_nav :hover {
       color: antiquewhite; }
     #Footer .footer_nav a {
@@ -114,23 +112,3 @@ main {
     width: 2.5%;
     margin-top: 10px;
     margin-bottom: 10px; }
-
-    @media screen and (max-width: 700px){
-      #header{
-          flex-direction: column;
-      }
-      #header .Logo{
-          justify-content: center;
-      }
-      #header .header_nav{
-          justify-content: center;
-      }
-      .Contenedor{
-          grid-template-columns: 1fr;
-          
-      }
-      .Contenedor_Nosotros{
-          grid-template-columns: 1fr;
-      }
-  }
-  

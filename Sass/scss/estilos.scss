@@ -1,3 +1,7 @@
+
+@import 'variable';
+@import 'mixins';
+
 *{margin: 0;padding: 0;box-sizing: border-box;}
 
 
@@ -9,26 +13,30 @@
     
 }
 
+.nav{
+    width: 100%;
+    display:flex;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 #header{
     grid-area: header;
-    background-color:rgb(207, 198, 198);
+    background-color:$fondo_hf;
     display:flex;
     justify-content:space-between;
     align-items: center;
     padding: 10px;
     .header_nav{
-        width: 100%;
-        display:flex;
-        font-size: 1.5rem;
-        list-style: none;
-        justify-content: flex-end;
-        align-items: center;
+       @extend .nav;
+    
         & :hover{
             color: antiquewhite;
         }
         a{
             text-decoration: none;
-            color: rgb(103, 103, 219);
+            color: $Letras;
             font-family: 'Roboto', sans-serif;
             font-weight: bold;
             }
@@ -38,10 +46,10 @@
     }
 
     .Logo{
-        display: flex;
-        align-items: center;
-        width: 200px;
-        height: 100px;
+        display: map-get($Logo , display );
+        align-items: map-get($Logo, Ubicacion );
+        width: map-get($Logo, ancho);
+        height: map-get($Logo, alto);
         img{    width: 100%;
         }
     }
@@ -51,11 +59,7 @@ main{
     grid-area: main;
     h1{ 
     
-        color: rgb(103, 103, 219);
-        font-size: 2.2rem;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        text-align: left;
+        @include Titulos($Letras,('Roboto', sans-serif),bold,left);
         margin-left: 45px;
         margin-top: 20px; 
     }
@@ -94,10 +98,8 @@ main{
             h3{
                 display: flex;
                 justify-content: center;
-                align-items: center;
-                color: rgb(103, 103, 219);
-                font-family: 'Roboto', sans-serif;
-                font-weight: bold;
+                @include Titulos($Letras,('Roboto', sans-serif),bold,center)
+                
              }  
         }
     
@@ -106,23 +108,20 @@ main{
 }
 
 #Footer{
-    background-color: rgb(207,198,198);
+    background-color: $fondo_hf;
     grid-area: footer;
     display: flex;
     flex-direction: row;
     .footer_nav{
-        width: 100%;
-        display:flex; 
-        flex-direction: row;
+        @extend .nav;
         font-size: 1rem;
-        justify-content:center;
-        align-items: center;
+        justify-content: center;
         & :hover{
             color: antiquewhite;
             }
             a{
                 text-decoration: none;
-                color: rgb(103, 103, 219);
+                color: $Letras;
                 font-family: 'Roboto', sans-serif;
                 font-weight: bold;
                 }
