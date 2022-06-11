@@ -2,6 +2,7 @@
 @import 'variable';
 @import 'mixins';
 
+
 *{margin: 0;padding: 0;box-sizing: border-box;}
 
 
@@ -98,13 +99,14 @@ main{
             h3{
                 display: flex;
                 justify-content: center;
-                @include Titulos($Letras,('Roboto', sans-serif),bold,center)
-                
-             }  
+                @include Titulos($Letras,('Roboto', sans-serif),bold,center);
+                margin-top: 5px;
+                margin-bottom: 5px;  
+             }
+            
         }
     
     }
-
 }
 
 #Footer{
@@ -137,4 +139,5 @@ main{
             
         }
 }
+@import 'reponsive';
 

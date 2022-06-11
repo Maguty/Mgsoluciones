@@ -1,0 +1,60 @@
+
+
+@media screen and (max-width: 700px){
+    #header{
+        flex-direction: column;
+        .Logo{
+            justify-content: center;
+        }
+        .header_nav{
+            justify-content: center;
+        }
+    }
+    main .Contenedor{
+        grid-template-columns: 1fr;
+        
+    }
+    .Contenedor_Nosotros{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media screen and (max-width:500px){
+    #header{
+        width: 100%;
+        position: fixed;
+        .header_nav{
+            font-size: 1.1rem;
+        }
+        .Logo img{
+            width: 100%;
+        }
+    }
+    main{
+    h1{
+        margin: 150px auto 0px;
+        font-size: 1.5rem; 
+    }
+    .Contenedor{
+        grid-template-columns: 1fr;
+        
+    }
+}
+    #Footer{
+        display: none;
+    } 
+}
+
+@media screen and (max-width:320px) {
+    main{
+    h1{
+        margin: 150px auto 0px;
+    }
+}
+    #header{
+    .header_nav{
+        font-size: 0.8rem;
+    }
+}
+}
