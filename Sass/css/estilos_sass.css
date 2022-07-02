@@ -52,6 +52,12 @@ main {
     text-align: left;
     margin-left: 45px;
     margin-top: 20px; }
+  main .text_index {
+    margin-bottom: 25px;
+    margin-left: 75px;
+    margin-top: 10px;
+    font-family: cursive;
+    font-size: 1.5rem; }
   main .Contenedor {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -88,9 +94,28 @@ main {
         color: #6767db;
         font-family: "Roboto", sans-serif;
         font-weight: bold;
-        text-align: center;
-        margin-top: 5px;
-        margin-bottom: 5px; }
+        text-align: center; }
+      main .Contenedor .Contenedor_Dentro .texto {
+        text-align: justify; }
+
+.Contenedor_Nosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 2%;
+  margin: 2%; }
+  .Contenedor_Nosotros .Contenedor_Dentro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .Contenedor_Nosotros .Contenedor_Dentro .img_nosotros {
+      width: 70%;
+      margin: 10px; }
+  .Contenedor_Nosotros .Texto_Nosotros {
+    margin-top: 25px;
+    font-size: 1.2rem; }
 
 #Footer {
   background-color: #cfc6c6;
@@ -115,6 +140,32 @@ main {
     margin-top: 10px;
     margin-bottom: 10px; }
 
+.Contenedor_Servicios {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "Indicadores" "Seguimiento" "Procesos";
+  grid-template-rows: auto; }
+  .Contenedor_Servicios #Indicadores, .Contenedor_Servicios #Seguimiento, .Contenedor_Servicios #Procesos {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%; }
+    .Contenedor_Servicios #Indicadores .img_service, .Contenedor_Servicios #Seguimiento .img_service, .Contenedor_Servicios #Procesos .img_service {
+      margin-left: 15px;
+      width: 20%; }
+    .Contenedor_Servicios #Indicadores .text_service, .Contenedor_Servicios #Seguimiento .text_service, .Contenedor_Servicios #Procesos .text_service {
+      margin-left: 25px;
+      font-size: 1.2rem; }
+
+.Contenedor_Contacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 2%;
+  margin: 2%; }
+
 @media screen and (max-width: 700px) {
   #header {
     flex-direction: column; }
@@ -138,13 +189,26 @@ main {
   main h1 {
     margin: 150px auto 0px;
     font-size: 1.5rem; }
+  main .text_index {
+    text-align: left;
+    margin-left: 15px; }
   main .Contenedor {
     grid-template-columns: 1fr; }
   #Footer {
-    display: none; } }
+    display: none; }
+  .Contenedor_Servicios #Indicadores, .Contenedor_Servicios #Seguimiento, .Contenedor_Servicios #Procesos {
+    flex-direction: column; }
+    .Contenedor_Servicios #Indicadores .img_service, .Contenedor_Servicios #Seguimiento .img_service, .Contenedor_Servicios #Procesos .img_service {
+      margin-left: 15px;
+      width: 50%; }
+    .Contenedor_Servicios #Indicadores .text_service, .Contenedor_Servicios #Seguimiento .text_service, .Contenedor_Servicios #Procesos .text_service {
+      margin-left: 25px;
+      font-size: 1rem; } }
 
 @media screen and (max-width: 320px) {
   main h1 {
     margin: 150px auto 0px; }
+  main .text_index {
+    font-size: 1rem; }
   #header .header_nav {
     font-size: 0.8rem; } }

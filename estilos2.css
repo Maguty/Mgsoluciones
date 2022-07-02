@@ -169,7 +169,7 @@ h3{
 
 .Contenedor_Servicios{
     display: grid;
-    grid-template-columns:1fr ;
+    grid-template-columns:2fr ;
     grid-template-rows: auto;
     margin: 2%;
 
@@ -177,12 +177,14 @@ h3{
 .Contenedor_Dentro_Servicio{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items:center;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .img_service{
-    width: 50%;
+    width: 20%;
 }
 
 .Contenedor_Novedades{

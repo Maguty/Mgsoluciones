@@ -17,6 +17,7 @@
     .Contenedor_Nosotros{
         grid-template-columns: 1fr;
     }
+   
 }
 
 
@@ -36,6 +37,10 @@
         margin: 150px auto 0px;
         font-size: 1.5rem; 
     }
+    .text_index{
+        text-align: left;
+        margin-left: 15px;
+    }
     .Contenedor{
         grid-template-columns: 1fr;
         
@@ -44,12 +49,28 @@
     #Footer{
         display: none;
     } 
+    .Contenedor_Servicios{
+    #Indicadores{
+        flex-direction: column;
+        .img_service{
+            margin-left: 15px;
+            width: 50%;
+            }
+        .text_service{
+            margin-left: 25px;
+            font-size: 1rem;
+            }
+        }
+    }   
 }
 
 @media screen and (max-width:320px) {
     main{
     h1{
         margin: 150px auto 0px;
+    }
+    .text_index{
+        font-size: 1rem;
     }
 }
     #header{
